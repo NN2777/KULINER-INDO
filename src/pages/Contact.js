@@ -1,5 +1,5 @@
 import React from "react";
-import PizzaLeft from "../assets/pizzaLeft.jpg";
+import LoginImg from "../assets/login_img.jpg";
 import "../styles/Contact.css";
 
 function Contact() {
@@ -7,24 +7,17 @@ function Contact() {
     <div className="contact">
       <div
         className="leftSide"
-        style={{ backgroundImage: `url(${PizzaLeft})` }}
+        style={{ backgroundImage: `url(${LoginImg})` }}
       ></div>
       <div className="rightSide">
-        <h1> Contact Us</h1>
+        <h1> Login Page </h1>
 
         <form id="contact-form" method="POST">
-          <label htmlFor="name">Full Name</label>
-          <input name="name" placeholder="Enter full name..." type="text" />
-          <label htmlFor="email">Email</label>
-          <input name="email" placeholder="Enter email..." type="email" />
-          <label htmlFor="message">Message</label>
-          <textarea
-            rows="6"
-            placeholder="Enter message..."
-            name="message"
-            required
-          ></textarea>
-          <button type="submit"> Send Message</button>
+          <label htmlFor="name">Email</label>
+          <input name="name" placeholder="Enter your email..." type="text" />
+          <label htmlFor="email">Password</label>
+          <input name="email" placeholder="Enter your password..." type="email" />
+          <button type="submit"> LOGIN </button>
         </form>
       </div>
     </div>
