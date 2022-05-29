@@ -1,39 +1,39 @@
-import Pepperoni from "../assets/pepperoni.jpg";
-import Margherita from "../assets/margherita.jpg";
-import PedroTechSpecial from "../assets/pedrotechspecial.jpg";
-import Vegan from "../assets/vegan.jpg";
-import Pineapple from "../assets/pineapple.jpg";
-import Expensive from "../assets/expensive.jpg";
+import Bakso from "../assets/bakso.jpg";
+import Sate from "../assets/sate.jpg";
+import Rendang from "../assets/rendang.jpg";
+import Rawon from "../assets/rawon.jpg";
+import Nasigoreng from "../assets/nasi-goreng.jpg";
+import Seblak from "../assets/seblak.jpg";
 
 export const MenuList = [
   {
-    name: "Pepperoni Pizza",
-    image: Pepperoni,
-    price: 15.99,
+    name: "Bakso",
+    image: Bakso,
+    price: 15000,
   },
   {
-    name: "Margherita Pizza",
-    image: Margherita,
-    price: 11.99,
+    name: "Sate Ayam",
+    image: Sate,
+    price: 12000,
   },
   {
-    name: "PedroTech Special Pizza",
-    image: PedroTechSpecial,
-    price: 256.53,
+    name: "Rendang",
+    image: Rendang,
+    price: 20000,
   },
   {
-    name: "Vegan Pizza",
-    image: Vegan,
-    price: 17.99,
+    name: "Rawon",
+    image: Rawon,
+    price: 15000,
   },
   {
-    name: "Pineapple Pizza",
-    image: Pineapple,
-    price: 4.99,
+    name: "Nasi Goreng",
+    image: Nasigoreng ,
+    price: 13000,
   },
   {
-    name: "Very Expensive Pizza",
-    image: Expensive,
-    price: 1997.99,
+    name: "Seblak",
+    image: Seblak,
+    price: 10000,
   },
 ];
