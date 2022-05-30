@@ -1,10 +1,10 @@
-.contact {
+.login {
   width: 100%;
   height: 90vh;
   display: flex;
 }
 
-.contact .leftSide {
+.login .leftSide {
   height: 100%;
   flex: 50%;
   background-position: center;
@@ -12,7 +12,7 @@
   background-size: cover;
 }
 
-.contact .rightSide {
+.login .rightSide {
   height: 100%;
   flex: 50%;
   display: flex;
@@ -20,7 +20,7 @@
   justify-content: center;
 }
 
-.contact .rightSide h1 {
+.login .rightSide h1 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-weight: 10;
