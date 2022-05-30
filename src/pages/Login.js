@@ -1,10 +1,10 @@
 import React from "react";
 import LoginImg from "../assets/login_img.jpg";
-import "../styles/Contact.css";
+import "../styles/Login.css";
 
-function Contact() {
+function Login() {
   return (
-    <div className="contact">
+    <div className="login">
       <div
         className="leftSide"
         style={{ backgroundImage: `url(${LoginImg})` }}
@@ -12,7 +12,7 @@ function Contact() {
       <div className="rightSide">
         <h1> Login Page </h1>
 
-        <form id="contact-form" method="POST">
+        <form id="login-form" method="POST">
           <label htmlFor="name">Email</label>
           <input name="name" placeholder="Enter your email..." type="text" />
           <label htmlFor="email">Password</label>
@@ -24,4 +24,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Login;
