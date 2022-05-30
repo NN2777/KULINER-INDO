@@ -6,4 +6,4 @@ This project was created by :
 3. Rimadhani Aula M
 
 ## About This Project
-The website is intended for Indonesian food lovers. We hope that consumers can easily order Indonesian food from our restaurant using this website o(*￣▽￣*)ブ
+The website is intended for Indonesian food lovers. We hope that consumers can easily order Indonesian food from our restaurant using this website Ψ(￣∀￣)Ψ
