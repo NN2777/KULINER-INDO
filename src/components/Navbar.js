@@ -29,8 +29,7 @@ function Navbar() {
         <Link to="/menu"> Menu </Link>
         <Link to="/about"> About </Link>
         <Link to="/promo">Promo</Link>
-      </div>
-      <div>
+
         <AuthBtn />
       </div>
     </div>
@@ -51,7 +50,8 @@ function LogoutBtn() {
 
   return (
     <div>
-      <Button onClick={handleLogout}>Logout</Button>
+      {/* <Button variant="primary" onClick={handleLogout}>Logout</Button> */}
+      <Link to="/" onClick={handleLogout}>Logout</Link>
     </div>
   );
 }
