@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Table, Button } from "react-bootstrap";
 import foodDataService from "../configdll/servicedb";
+import "./../App.css";
 
 const MenuListt = ({ getFoodId }) => {
   const [Foods, setFoods] = useState([]);
@@ -22,13 +23,13 @@ const MenuListt = ({ getFoodId }) => {
   return (
     <>
       <div className="mb-2">
-        <Button variant="dark edit" onClick={getFoods}>
+        <button className="button-refresh" onClick={getFoods}>
           Refresh List
-        </Button>
+        </button>
       </div>
 
       {/* <pre>{JSON.stringify(books, undefined, 2)}</pre>} */}
-      <Table striped bordered hover size="sm">
+      <table>
         <thead>
           <tr>
             <th>#</th>
@@ -45,26 +46,24 @@ const MenuListt = ({ getFoodId }) => {
                 <td>{doc.nama_makanan}</td>
                 <td>{doc.deskripsi_makanan}</td>
                 <td>
-                  <Button
-                    variant="secondary"
-                    className="edit"
+                  <button
+                    className="button-edit"
                     onClick={(e) => getFoodId(doc.id)}
                   >
                     Edit
-                  </Button>
-                  <Button
-                    variant="danger"
-                    className="delete"
+                  </button>
+                  <button
+                    className="button-delete"
                     onClick={(e) => deleteHandler(doc.id)}
                   >
                     Delete
-                  </Button>
+                  </button>
                 </td>
               </tr>
             );
           })}
         </tbody>
-      </Table>
+      </table>
     </>
   );
 };
