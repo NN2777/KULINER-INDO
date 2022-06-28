@@ -62,17 +62,17 @@ const Login = () => {
           </div>
         </Form>
         <hr />
-        <div>
+        <center><div>
           <GoogleButton
             className="g-btn"
             type="dark"
             onClick={handleGoogleSignIn}
           />
-        </div>
+        </div></center>
       </div>
-      <div className="p-4 box mt-3 text-center">
+      <center><div className="p-4 box mt-3 text-center"  style={{ margin:"10px" }}>
         Don't have an account? <Link to="/signup">Sign up</Link>
-      </div>
+      </div></center>
     </>
   );
 };
