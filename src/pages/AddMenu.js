@@ -27,7 +27,7 @@ const AddMenu = ({ id, setFoodId }) => {
         setMessage({ error: false, msg: "Updated successfully!" });
       } else {
         await foodDataService.addFoods(newFood);
-        setMessage({ error: false, msg: "New Book added successfully!" });
+        setMessage({ error: false, msg: "New Menu added successfully!" });
       }
     } catch (err) {
       setMessage({ error: true, msg: err.message });
