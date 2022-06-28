@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Container, Navbar, Row, Col } from "react-bootstrap";
+import { Container, Navbar, Row, Col, Button } from "react-bootstrap";
 import AddMenu from "./AddMenu";
 import MenuListt from "./MenuList";
+
 
 function Menu3() {
   const [FoodId, setFoodId] = useState("");
@@ -12,13 +13,15 @@ function Menu3() {
   };
   return (
     <>
-      <Navbar bg="dark" variant="dark" className="header">
-        <Container>
-          <Navbar.Brand href="#home">Library - Firebase CRUD</Navbar.Brand>
+      <Navbar bg="dark" variant="dark" className="header" style={{ width:"100%" }}>
+        <Container style={{ width:"100%" }}>
+        <center>
+          <Navbar.Brand href="#home" style={{ width:"100%" }}><h1>Our List of Menu</h1></Navbar.Brand>
+          </center>
         </Container>
       </Navbar>
 
-      <Container style={{ width: "400px" }}>
+      <Container style={{ width: "800px"}}>
         <Row>
           <Col>
             <AddMenu id={FoodId} setFoodId={setFoodId} />
@@ -28,7 +31,9 @@ function Menu3() {
       <Container>
         <Row>
           <Col>
-            <MenuListt getFoodId={getFoodIdHandler} />
+            <center>
+              <MenuListt getFoodId={getFoodIdHandler} />
+            </center>
           </Col>
         </Row>
       </Container>
