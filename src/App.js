@@ -10,13 +10,13 @@ import Login from "./pages/Login";
 import Edit2 from "./pages/Edit2";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
 import ProtectedRoute from "./configdll/ProtectedRoute";
-
 import {
   BrowserRouter as Router,
   Route,
   Routes, //in the new router-dom version, Switch is used
   useParams,
 } from "react-router-dom";
+import SignUp from "./pages/SignUp";
 
 export function App() {
   return (
@@ -29,6 +29,7 @@ export function App() {
             <Route path="/menu" exact element={<Menu3 />} />
             <Route path="/about" exact element={<About />} />
             <Route path="/login" exact element={<Login />} />
+            <Route path="/signup" element={<SignUp />}></Route>
             <Route path="/edit/:id" element={<Edit2 />} />
             <Route
               path="/promo"
